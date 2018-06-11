@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { RoutesNoAuthentication } from './Components/NoAuthentication/RoutesNoAuthentication'; 
+import { RoutesNoAuthentication } from './Components/NoAuthentication/RoutesNoAuthentication';
 
 export default class App extends React.Component {
   constructor() {
@@ -10,7 +10,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <RoutesNoAuthentication /> 
+        <RoutesNoAuthentication />
       </View>
     );
   }
