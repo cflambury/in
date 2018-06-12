@@ -7,7 +7,7 @@ const SignIn = (props) => {
   console.log(props);
   // props.navigation.navigate();
   const { navigation } = props;
-  return (<View>
+  return (<View style={{ flex: 1, justifyContent: 'center' }}>
     <Text>Componente SignIn</Text>
     <Button
       title="Navegar SignUp"
@@ -20,7 +20,7 @@ const SignIn = (props) => {
 };
 const SignUp = (props) => {
   const { navigation } = props;
-  return (<View>
+  return (<View style={{ flex: 1, justifyContent: 'center' }}>
     <Text>Componente SignUp</Text>
     <Button
       title="Regresar"
@@ -34,10 +34,17 @@ const SignUp = (props) => {
 const RoutesNoAuthentication = StackNavigator({
   SignIn: {
     screen: SignIn,
+    
   },
   SignUp: {
     screen: SignUp,
+    
   },
-});
+},
+{
+  // el header de la demas screen por predeterminado no tendra titulo
+  headerMode: 'none',
+},
+);
 
 export { RoutesNoAuthentication };
