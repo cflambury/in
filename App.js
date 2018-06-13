@@ -1,7 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { RoutesNoAuthentication } from './Components/NoAuthentication/RoutesNoAuthentication';
+import { RoutesAuthentication } from './Components/Authentication/RoutesAuthentication';
 
+
+console.disableYellowBox = ['Remote debugger'];
 export default class App extends React.Component {
   constructor() {
     super();
@@ -10,7 +13,8 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <RoutesNoAuthentication />
+        <RoutesAuthentication/>
+
       </View>
     );
   }

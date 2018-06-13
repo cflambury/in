@@ -34,11 +34,9 @@ const SignUp = (props) => {
 const RoutesNoAuthentication = StackNavigator({
   SignIn: {
     screen: SignIn,
-    
   },
   SignUp: {
     screen: SignUp,
-    
   },
 },
 {
