@@ -1,27 +1,31 @@
-import { TabNavigator } from "react-navigation";
-import Home from "./Home";
-import Search from "./Search";
-import Add from "./Add";
-import Follow from "./Follow";
-import Profile from "./Profile";
+import { TabNavigator } from 'react-navigation';
+import { StackHome } from './StackHome';
+import Search from './Search';
+import Add from './Add';
+import Follow from './Follow';
+import Profile from './Profile';
 
-const RoutesAuthentication = TabNavigator({
-    Home:{
-        screen: Home,
+const RoutesAuthentication = TabNavigator(
+  {
+    Home: {
+      screen: StackHome,
     },
     Search: {
-        screen: Search,
+      screen: Search,
     },
-        Add:{
-        screen: Add,
+    Add: {
+      screen: Add,
     },
     Follow: {
-        screen: Follow,
+      screen: Follow,
     },
     Profile: {
-        screen: Profile,
-    }    
-
-});
+      screen: Profile,
+    },
+  },
+  {
+    tabBarPosition: 'bottom',
+  },
+);
 
 export { RoutesAuthentication };

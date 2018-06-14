@@ -15,7 +15,7 @@ const SignIn = (props) => {
  navigation.navigate('SignUp');
     }}
     />
-  </View>
+          </View>
   );
 };
 const SignUp = (props) => {
@@ -28,21 +28,22 @@ const SignUp = (props) => {
               navigation.goBack();
             }}
     />
-  </View>);
+          </View>);
 };
 
-const RoutesNoAuthentication = StackNavigator({
-  SignIn: {
-    screen: SignIn,
+const RoutesNoAuthentication = StackNavigator(
+  {
+    SignIn: {
+      screen: SignIn,
+    },
+    SignUp: {
+      screen: SignUp,
+    },
   },
-  SignUp: {
-    screen: SignUp,
-  },
-},
-{
+  {
   // el header de la demas screen por predeterminado no tendra titulo
-  headerMode: 'none',
-},
+    headerMode: 'none',
+  },
 );
 
 export { RoutesNoAuthentication };

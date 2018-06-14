@@ -13,7 +13,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <RoutesAuthentication/>
+        <RoutesAuthentication />
 
       </View>
     );
