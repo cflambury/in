@@ -17,8 +17,12 @@ const StackHome = StackNavigator({
   },
   Comentarios: {
     screen: Comentarios,
+    navigationOptions: {
+      tabBarVisible: false,
+    },
   },
 
 });
+
 
 export { StackHome };
