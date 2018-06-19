@@ -4,15 +4,19 @@ import { View, Text, StyleSheet, Button } from 'react-native';
 
 // create a component
 class Comentarios extends Component {
-  render() {     
+  // hace invisible la barra 
+  static navigationOptions = {
+    tabBarVisible: false,
+  };
+  render() {
     const { navigation } = this.props;
     return (
       <View style={styles.container}>
         <Text>Comentarios</Text>
         <Button
-        title = 'Autor'
-        onPress = {() =>{ navigation.navigate('Autor');}}
-        />     
+          title="Autor"
+          onPress={() => { navigation.navigate('Autor'); }}
+        />
       </View>
     );
   }
